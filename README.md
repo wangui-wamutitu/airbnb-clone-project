@@ -37,3 +37,11 @@ This project goes beyond simple CRUD, it’s a deep dive into backend systems, d
 
 ---
 
+## 👫🏾 Team Roles.
+
+- 👨🏽‍💻 Backend Developer Role
+The backend developer is responsible for designing and implementing the server-side logic of the application. This includes building secure and scalable APIs using Django, modeling the relational database in MySQL, and integrating authentication and authorization mechanisms. The role also involves collaborating on system architecture, ensuring data integrity, and setting up CI/CD pipelines for smooth deployment. A strong focus is placed on performance, security, and maintainability.
+
+---
+
+
