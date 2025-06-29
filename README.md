@@ -16,7 +16,7 @@ This project goes beyond simple CRUD, it’s a deep dive into backend systems, d
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Technology Stack
 
 - **Backend:** Django, Django REST Framework, GraphQL
 - **Database:** MySQL
