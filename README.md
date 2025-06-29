@@ -44,4 +44,69 @@ The backend developer is responsible for designing and implementing the server-s
 
 ---
 
+## 🗃️ Database Design
+
+This project models a real-world booking platform, with entities that reflect key user and business interactions. Below are the primary entities and their relationships:
+
+### 🔹 Users
+Represents platform users (guests and hosts).
+- `id` – Unique identifier
+- `name` – Full name of the user
+- `email` – Used for login and communication
+- `role` – Either "guest" or "host"
+- `created_at` – Account creation timestamp
+
+### 🔹 Properties
+Represents the listings that users can book.
+- `id` – Unique identifier
+- `title` – Name or headline of the property
+- `description` – Detailed property overview
+- `location` – City or region
+- `host_id` – References the user who owns the property
+
+**Relationship:** A user (host) can own multiple properties.
+
+### 🔹 Bookings
+Represents reservations made by guests.
+- `id` – Unique identifier
+- `property_id` – References the booked property
+- `user_id` – References the guest making the booking
+- `start_date` – Booking start date
+- `end_date` – Booking end date
+
+**Relationship:** A booking belongs to one user and one property.
+
+### 🔹 Reviews
+Represents feedback left by guests after a stay.
+- `id` – Unique identifier
+- `user_id` – Reviewer (guest)
+- `property_id` – Property being reviewed
+- `rating` – Numeric score
+- `comment` – Optional written feedback
+
+**Relationship:** A user can leave many reviews; a property can have many reviews.
+
+### 🔹 Payments
+Represents completed booking payments.
+- `id` – Unique identifier
+- `booking_id` – References the booking
+- `amount` – Total amount paid
+- `payment_method` – e.g., card, PayPal
+- `status` – e.g., success, failed
+
+**Relationship:** Each payment is linked to a single booking.
+
+---
+
+### 🔗 Entity Relationships Overview
+
+- One **user** can be both a **guest** and a **host**.
+- One **user** (host) can own many **properties**.
+- One **property** can have many **bookings** and **reviews**.
+- One **booking** is made by one **guest** and linked to one **property**.
+- One **review** is tied to one **user** and one **property**.
+- One **payment** is tied to one **booking**.
+
+
+
 
