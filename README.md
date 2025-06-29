@@ -37,10 +37,21 @@ This project goes beyond simple CRUD, it’s a deep dive into backend systems, d
 
 ---
 
-## 👫🏾 Team Roles.
+## 👥 Team Roles
 
-- 👨🏽‍💻 Backend Developer Role
-The backend developer is responsible for designing and implementing the server-side logic of the application. This includes building secure and scalable APIs using Django, modeling the relational database in MySQL, and integrating authentication and authorization mechanisms. The role also involves collaborating on system architecture, ensuring data integrity, and setting up CI/CD pipelines for smooth deployment. A strong focus is placed on performance, security, and maintainability.
+This project follows a collaborative development approach with clearly defined roles to simulate real-world team dynamics and responsibilities.
+
+### 👨🏽‍💻 Backend Developer
+Responsible for designing and developing secure, scalable APIs using Django and GraphQL. Manages server-side logic, business rules, authentication, and integration with the database layer.
+
+### 🗃️ Database Administrator (DBA)
+Designs and optimizes the MySQL database structure. Ensures data integrity, relationships, indexing, and backups. Collaborates with backend developers to implement efficient query strategies and schema migrations.
+
+### 🧪 QA Engineer / Tester
+Implements automated and manual testing strategies to validate core features and catch regressions. Responsible for writing unit, integration, and end-to-end tests to ensure a stable user experience.
+
+### 🐳 DevOps Engineer
+Sets up and manages CI/CD pipelines using Docker and GitHub Actions. Oversees environment configuration, deployment automation, and monitors system performance to ensure uptime and smooth releases.
 
 ---
 
